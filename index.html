@@ -9,17 +9,24 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
     :root {
-      --bg: #fe03314e;
-      --bgCard: #17161610;
-      --bSBefore: 60px 20px #ffb3c1, 130px 10px #ffb3c1, 190px 20px #ffb3c1,
-        260px -5px #ffb3c1, 340px 20px #ffb3c1;
-      --bSAfter: 50px 20px #ffccd5, 120px 40px #ffccd5, 200px 15px #ffccd5,
-        260px 30px #ffccd5, 330px 30px #ffccd5, 380px 10px #ffccd5;
-      --bSClouds: 55px 30px #fff0f3, 125px 10px #fff0f3, 175px 20px #fff0f3,
-        250px 10px #fff0f3, 320px 5px #fff0f3, 380px 10px #fff0f3;
-      --rHeart: #c9184a;
-      --lHeart: #ff4d6d;
-      --text: #800f2f;
+      --bg: #919739;
+      
+      --bgCard: rgba(255, 255, 255, 0.3);
+      
+      --bSBefore: 60px 20px #898b4d, 130px 10px #898b4d, 190px 20px #898b4d,
+        260px -5px #898b4d, 340px 20px #898b4d;
+        
+      --bSAfter: 50px 20px #a5a667, 120px 40px #a5a667, 200px 15px #a5a667,
+        260px 30px #a5a667, 330px 30px #a5a667, 380px 10px #a5a667;
+        
+      --bSClouds: 55px 30px #c0c180, 125px 10px #c0c180, 175px 20px #c0c180,
+        250px 10px #c0c180, 320px 5px #c0c180, 380px 10px #c0c180;
+        
+      --rHeart: #d6d978;
+      
+      --lHeart: #edef8d;
+      
+      --text: #000;
     }
 
     body {
@@ -44,7 +51,7 @@
       height: 300px;
       background-color: var(--bgCard);
       overflow: hidden;
-      border: 5px solid white;
+      border: 5px solid rgba(255, 255, 255, 0.1);
       border-radius: 10px;
       box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
     }
@@ -52,7 +59,7 @@
     .valentines-day-card:before {
       content: "";
       position: absolute;
-      background-color: #ffb3c1;
+      background-color: #898b4d;
       width: 100px;
       height: 100px;
       border-radius: 50%;
@@ -64,7 +71,7 @@
     .valentines-day-card:after {
       content: "";
       position: absolute;
-      background-color: #ffccd5;
+      background-color: #a5a667;
       width: 100px;
       height: 100px;
       border-radius: 50%;
@@ -78,7 +85,7 @@
       width: 100px;
       height: 100px;
       border-radius: 50%;
-      background-color: #fff0f3;
+      background-color: #c0c180;
       z-index: 5;
       top: 210px;
       left: -20px;
